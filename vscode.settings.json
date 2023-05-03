@@ -18,5 +18,7 @@
     // will be detected based on the file contents. Set to false to keep
     // the values you've explicitly set, above.
     "editor.detectIndentation": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4 }"
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4 }",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
 }
