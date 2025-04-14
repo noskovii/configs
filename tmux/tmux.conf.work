@@ -1,6 +1,8 @@
 set -g status-bg black
 set -g status-fg white
 
+set -g status-interval 1
+
 set -g history-limit 1000000
 
 set -g mouse on
@@ -10,6 +12,7 @@ set -g window-status-current-format "#[fg=colour0]#[bg=colour4]#[fg=colour7]#
 
 # https://github.com/mixu/tmux-mem
 # https://github.com/mixu/tmux-cpu
-set-option -g status-right 'MEM: #(/usr/local/bin/tmux-mem --format ":currentBytes [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]") | CPU: #(/usr/local/bin/tmux-cpu --format ":load [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]")'
+set -g status-right 'MEM: #(/usr/local/bin/tmux-mem --format ":currentBytes [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]") | CPU: #(/usr/local/bin/tmux-cpu --format ":load [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]")'
+set -g status-left '%H:%M:%S'
 
 run -b '~/.tmux/plugins/tpm/tpm'
