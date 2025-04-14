@@ -4,11 +4,11 @@ set -g status-fg white
 set -g history-limit 1000000
 
 set-option -g mouse on
+set -g mouse on
 
 set -g window-status-format "#[fg=colour244]#[bg=colour0]#I-#[fg=colour240]  #W"
 set -g window-status-current-format "#[fg=colour0]#[bg=colour4]#[fg=colour7]#[bg=colour4] #I* #[fg=colour7] #W #[fg=colour4]#[bg=colour0]"
 
-# https://github.com/mixu/tmux-mem
 # https://github.com/mixu/tmux-cpu
 set-option -g status-right 'MEM: #(/usr/local/bin/tmux-mem --format ":currentBytes [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]") | CPU: #(/usr/local/bin/tmux-cpu --format ":load [#[fg=:color]:spark#[default]] #[fg=:color]:percent#[default]")'
 
