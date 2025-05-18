@@ -5,7 +5,8 @@ dynamic_padding = false
 title = "Alacritty"
 
 [terminal.shell]
-program = "/usr/bin/tmux"
+#program = "/usr/bin/tmux"
+program = "/opt/homebrew/bin/tmux"
 args = [ "new-session", "-A", "-s", "main" ]
 
 [window.padding]
